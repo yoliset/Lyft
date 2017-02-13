@@ -1,10 +1,16 @@
+*{
+ outline: 1px solid red;    
+}
+#menu{
+    position: relative;
+    top: 10px;
+}
 body {
     font-family: "Merriweather", serif;
 }
 p, a {
     font-family: "Open Sans", sans-serif;
 }
-/*------------------------------------HEADER */
 
 /*------------------------------------- HERO  */
 
@@ -13,7 +19,13 @@ p, a {
     color:black;
     text-align: center;
 }   
-
+.pais{
+    background: url(../img/peru.png)no-repeat;
+    padding: 15px 18px;
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
 .hero  h2{
     font-size: 20px;
 }
@@ -25,15 +37,7 @@ p, a {
     margin-top: 40px;
     font-size: 13px;
 }
-.cajita 
-{
-	width: 50%;
-	position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-}
-button{
+#next{
     padding: 20px 150px;
     margin-top: 100px;
     background-color: magenta;

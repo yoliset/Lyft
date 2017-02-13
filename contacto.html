@@ -7,12 +7,14 @@
   <title>Lyft</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Inserta tu código aquí -->
   <link rel="stylesheet" href="icons/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/contacto.css">
   <link rel="stylesheet" href="">
   <link rel="stylesheet" href="css/ihover.css">
+  <link rel="stylesheet" href="paises.html">
   
 
   <script src="js/jquery.js"></script>
@@ -25,21 +27,32 @@
    <section class="hero">
         <div class="degradado">  
             <div class="container-fluid">
-            <h2 class="frase text-center"><strong>Sign up</strong><p class="text-center">Join now for free ride credit</p></h2>
+            <div class="row col-md-12">
+            <div class="col-md-1 col-xs-1"><button id="menu" type="button" class="btn btn-default">
+      <span class="glyphicon glyphicon-menu-left"></span>
+    </button></div> 
+            <div class="col-md-11 col-xs-11"><h2 class="frase text-center"><strong>Sign up</strong><p class="text-center">Join now for free ride credit</p></h2></div>
+            </div>
             <hr>
             <div class="cajita">
 					<form>
 					  <div class="relleno">
+                       <div class="row col-md-12">
+                        <div class="col-md-1 col-xs-2">
+					         <button class="pais"><a href="paises.html"></a></button>
+                        </div> 
+                        <div class="col-md-11 col-xs-10"> 
 					      <label for="exampleInputEmail1"></label>
-					      <button></button>
 					      <input type="numero" class="form-control" id="exampleInputNumero" aria-describedby="emailHelp" placeholder="+51">
+					      </div>
 					  </div>
+                      </div>
                 </form>
 				</div> 
                 </div>
             </div>
             <p class="letra"> We´ll send a text to verify your phone</p>
-             <button class="text-center">Next</button>        
+             <button id="next" class="text-center">Next</button>        
     </section>
 </body>
 </html>
