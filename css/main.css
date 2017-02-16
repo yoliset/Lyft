@@ -7,7 +7,13 @@ body {
 }
 
 /*------------------------------------- HERO  */
-
+h3{
+    color: white;
+    font-size: 50px;
+    position: relative;
+    top: 70px;
+    font-family: fantasy;
+}
 .caja{
     text-align: center;
 }

@@ -20,14 +20,18 @@ p, a {
     text-align: center;
 }   
 .pais{
-    background: url(../img/peru.png)no-repeat;
-    padding: 15px 18px;
+    padding: 5px 8px;
     position: relative;
     left: 10px;
     top: 20px;
 }
 .hero  h2{
     font-size: 20px;
+}
+
+.buton{
+ position: relative;
+    left: 10px;
 }
 .hero p{
     padding-top: 10px;
@@ -44,4 +48,8 @@ p, a {
     color: white;
     font-family: cursive;
     font-size: 20px;
+}
+img{
+    height: 20px;
+    width: 30px;
 }
