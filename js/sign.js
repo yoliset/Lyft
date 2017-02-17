@@ -85,5 +85,6 @@ function manageMessage(_idInput, _mensaje, mode=false){
         
     } else {
         manageMessage();
+        window.location.href = 'mapas.html';
     }
 }

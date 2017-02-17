@@ -19,7 +19,7 @@ var jsonPaises = [
   {
       "nombre": "Chile",
       "phone_code": "56", 
-      "imagen":"img/chile.png", 
+      "imagen":"img/Chile.png", 
       "letra":"K<br>N"},
   {
       "nombre": "Colombia",
