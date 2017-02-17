@@ -3,7 +3,7 @@ function init(){
 }
 var map;
 function initMap() {
-  var myLatLng = {lat: -25.363, lng: 131.044};
+  var myLatLng = {lat: -16.457389199999998, lng: -71.5315308};
 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 4,
@@ -32,7 +32,7 @@ function initMap() {
     
   var image = '/img/nia.png';
   var beachMarker = new google.maps.Marker({
-         position: {lat: -33.890, lng: 151.274},
+         position: {lat: -16.457389199999998, lng: -68.5315308},
          map: map,
          icon: image
   });

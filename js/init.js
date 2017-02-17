@@ -7,3 +7,6 @@ function init(){
     imagenPais.src = paisnu;
     locStore.textContent = numPais;
 }
+function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+}

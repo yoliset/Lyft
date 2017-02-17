@@ -13,13 +13,16 @@ function mostrarMensaje(input, _mensaje, mode=false){
     }
 }
 function validateForm(){
-    numero();
+    nombres();
+    correo();
+    mensaje();
 }
 //funccion de  name, lastname , email y password,para que el usuario cumpla los caracteres especificos.
 function validate_input(input) {
     console.log(input);
     var validations = {
-        "numero": /^[A-Z][a-z]+$/,
+        "name": /^[A-Z][a-z]+$/,
+        "email": /^\S+@\S+\.\S+$/,
     };
     if (validations[input.id].test(input.value) == false) {
         return false;
@@ -27,7 +30,7 @@ function validate_input(input) {
     else
         return true;
 }
-function numero() {
+function nombres() {
     var name = document.getElementById("name");
     name.value = name.value.charAt(0).toUpperCase() + name.value.slice(1);
     if (validate_input(name) == false){
@@ -40,18 +43,19 @@ function numero() {
         mostrarMensaje(name);
     }
 }
-function seleccionar(){
-    var control = document.getElementById("control");
-    if((control.value)==0 !==false ){
+function correo(){
+    var email = document.getElementById("email");
+   if (validate_input(email) == false){
         mostrarMensaje(
-            control, 
-            'Selecciona una opción', 
+            email, 
+            'Emáil incorrecto',
             true
         );
-    } else{
-        mostrarMensaje(control);
-    }
-}
+   } else{
+        mostrarMensaje(email);
+   }
+} 
+
 //Funccion para crear un div , el cual informara al usuario, que se tiene que llenar todo. 
 function manageMessage(_idInput, _mensaje, mode=false){
     var elemento = document.getElementById(_idInput);
@@ -75,7 +79,8 @@ function manageMessage(_idInput, _mensaje, mode=false){
 }
  function mensaje() {
     var name = document.getElementById("name");
-    if((name.value)=="" !==false){
+    var email = document.getElementById("email");
+    if((name.value)=="" !==false || (email.value)=="" !==false){
         manageMessage("mia", 'Es obligatorio, llenar los datos porfavor!!', true);
         
     } else {
